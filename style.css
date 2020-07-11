@@ -1,0 +1,16 @@
+.heading {
+    margin: auto;
+    width: max-content;
+}
+
+.valuesoutput {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.test {
+    border: 2px solid red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch by Arsalan Qasim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Stop Watch</h1>
+    <div class="d-flex justify-content-center mt-4">
+        <h1 class="valuesoutput" id="hours">0</h1>
+        <h1 class="valuesoutput" id="minutes">0</h1>
+        <h1 class="valuesoutput" id="seconds">0</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <h1 class="valuesoutput">H</h1>
+        <h1 class="valuesoutput">M</h1>
+        <h1 class="valuesoutput">S</h1>
+    </div>
+    <div class="d-flex justify-content-center m-4">
+        
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="start()" class="btn btn-secondary" id="startbutton">Start</button>
+            <button type="button" onclick="stop()" class="btn btn-secondary" id="stopbutton">Stop</button>
+            <button type="button" onclick="reset()" class="btn btn-secondary" id="resetbutton">Reset</button>
+        </div>
+
+    </div>
+    <div class="progress" style="width: 50%; margin: auto;">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="Pbar"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
